@@ -36,7 +36,7 @@ public class PenjualanTiketBioskop02 {
                     totalHarga = hargaTiket * totalTiket;
                 }
                 System.out.printf("Harga yang harus anda bayar: %s\n", totalHarga);
-                continue;
+                // continue;
             }
            
         }while(totalKeseluruhanTiket >= 0);
