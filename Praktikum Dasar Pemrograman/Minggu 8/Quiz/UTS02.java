@@ -33,9 +33,8 @@ public class UTS02 {
                 System.out.println("\sVillain dikalahkan!!, Superhero menang.\n\sPertarungan Selesai");
                 System.out.println("-----------------------------------------");
                 break;
-            }
-
-            System.out.printf("--- Ronde %s ---\n", i);
+            }else{
+                System.out.printf("--- Ronde %s ---\n", i);
             System.out.println("--- Status ---");
             System.out.printf("Energi Superhero: %s\n", energiHero);
             System.out.printf("Energi Villain: %s\n", energiVillain);
@@ -85,7 +84,7 @@ public class UTS02 {
                             }
                         }else{
                             if(spesial >= 1){
-                                energiVillain-=30;
+                                energiVillain-=50;
                                 energiHero-=20;
                                 System.out.println("--------------------------------------------------------------------");
                                 System.out.println("Superhero menggunakan serangan Super Kuat! Villain kehilangan 50 energi");
@@ -106,9 +105,9 @@ public class UTS02 {
                         System.out.println("---------------------------------------------------------");
                         continue;
                    }
+            }
         }
         input02.close();
-
     }    
    
 }
