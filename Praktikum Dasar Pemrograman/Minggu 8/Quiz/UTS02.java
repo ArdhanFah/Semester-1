@@ -35,20 +35,20 @@ public class UTS02 {
                 break;
             }else{
                 System.out.printf("--- Ronde %s ---\n", i);
-            System.out.println("--- Status ---");
-            System.out.printf("Energi Superhero: %s\n", energiHero);
-            System.out.printf("Energi Villain: %s\n", energiVillain);
-            System.out.printf("Serangan Spesial Tersisa: %s\n", spesial);
-            System.out.println("-------------------------");
-            System.out.println("Pilih aksi: ");
-            System.out.println("1. Serangan Normal (-5 Energi, -15 Energi Villain, bisa ada serangan kritis)");
-            System.out.println("2. Serangan spesial (-20 energi, -30 Energi Villain, bisa ada serangan super)");
-            System.out.print("Pilihan anda: ");
-            aksi = input02.nextInt();
-            // Decision
+                System.out.println("--- Status ---");
+                System.out.printf("Energi Superhero: %s\n", energiHero);
+                System.out.printf("Energi Villain: %s\n", energiVillain);
+                System.out.printf("Serangan Spesial Tersisa: %s\n", spesial);
+                System.out.println("-------------------------");
+                System.out.println("Pilih aksi: ");
+                System.out.println("1. Serangan Normal (-5 Energi, -15 Energi Villain, bisa ada serangan kritis)");
+                System.out.println("2. Serangan spesial (-20 energi, -30 Energi Villain, bisa ada serangan super)");
+                System.out.print("Pilihan anda: ");
+                aksi = input02.nextInt();
+                // Decision
                 switch (aksi) {
                     case 1:
-                       if(energiHero >= 50){
+                    if(energiHero >= 50){
                             System.out.println("--------------------------------------------------------------------");
                             System.out.println("Superhero menggunakan serangan normal! Villain kehilangan 15 energi");
                             System.out.println("--------------------------------------------------------------------");
@@ -56,7 +56,7 @@ public class UTS02 {
                             energiHero-=5;
                             i++;
                             continue;
-                       }else{
+                    }else{
                             System.out.println("--------------------------------------------------------------------");
                             System.out.println("Serangan kritis terjadi! villain kehilangan 30 energi");
                             System.out.println("--------------------------------------------------------------------");
@@ -64,7 +64,7 @@ public class UTS02 {
                             energiHero-=5;
                             i++;
                             continue;
-                       }
+                    }
                     case 2:
                         if(energiHero >= 30){
                             if(spesial >= 1){
@@ -104,7 +104,7 @@ public class UTS02 {
                         System.out.println("Serangan anda salah!!!! Pilih Serangan yang benar [1-2]");
                         System.out.println("---------------------------------------------------------");
                         continue;
-                   }
+                }
             }
         }
         input02.close();
