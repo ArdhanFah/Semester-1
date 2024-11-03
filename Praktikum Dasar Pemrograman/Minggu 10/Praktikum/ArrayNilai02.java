@@ -17,7 +17,6 @@ public class ArrayNilai02 {
                 System.out.printf("Mahasiswa ke-%s tidak lulus!\n", i+1);
             }
         }
-
         input02.close();
     }
 }
