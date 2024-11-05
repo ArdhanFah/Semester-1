@@ -11,14 +11,17 @@ public class Nilai02 {
 
         int[] nilai = new int[jumlahMhs];
 
-        for(int i = 0; i < jumlahMhs; i++){
+        System.out.printf("Masukkan nilai mahasiswa ke-1: ");
+        nilai[0] = input02.nextInt();
+        jumlahNilai += nilai[0];
+
+        nilMax = nilai[0];
+        nilMin = nilai[0];
+        for(int i = 1; i < jumlahMhs; i++){
             System.out.printf("Masukkan nilai mahasiswa ke-%s: ", (i+1));
             nilai[i] = input02.nextInt();
             jumlahNilai += nilai[i];
-            
-            nilMax = nilai[0];
-            nilMin = nilai[0];
-            
+
             if(nilai[i] < nilMin){
                 nilMin = nilai[i];
             }
